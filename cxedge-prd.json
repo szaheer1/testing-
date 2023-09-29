@@ -1,0 +1,72 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "annotations": {
+            "k8s.t-mobile.com/director": "rhansen"
+        },
+        "creationTimestamp": "2020-03-13T23:17:05Z",
+        "deletionTimestamp": "2023-08-10T22:54:36Z",
+        "labels": {
+            "istio-injection": "enabled",
+            "k8s.t-mobile.com/akmid": "apm0102560",
+            "k8s.t-mobile.com/customroles": "tke-user-istio-role",
+            "k8s.t-mobile.com/director": "rhansen",
+            "k8s.t-mobile.com/nodeportRange": "unknown",
+            "k8s.t-mobile.com/npi": "no",
+            "k8s.t-mobile.com/requestor": "svishnu",
+            "k8s.t-mobile.com/ritmNumber": "ritm1016534",
+            "k8s.t-mobile.com/speNumber": "na",
+            "k8s.t-mobile.com/sysid": "2325a834dba348d8ca44ff00ba961970",
+            "k8s.t-mobile.com/tkev": "enabled"
+        },
+        "name": "cxedge-prd",
+        "resourceVersion": "1180330077",
+        "uid": "c0a0a134-6580-11ea-bdc5-0050569be589"
+    },
+    "spec": {
+        "finalizers": [
+            "kubernetes"
+        ]
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastTransitionTime": "2023-08-10T22:54:42Z",
+                "message": "All resources successfully discovered",
+                "reason": "ResourcesDiscovered",
+                "status": "False",
+                "type": "NamespaceDeletionDiscoveryFailure"
+            },
+            {
+                "lastTransitionTime": "2023-08-10T22:54:42Z",
+                "message": "All legacy kube types successfully parsed",
+                "reason": "ParsedGroupVersions",
+                "status": "False",
+                "type": "NamespaceDeletionGroupVersionParsingFailure"
+            },
+            {
+                "lastTransitionTime": "2023-08-10T22:54:42Z",
+                "message": "Failed to delete all resource types, 5 remaining: object *v1beta1.ServiceBindingList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1beta1.ServiceBrokerList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1beta1.ServiceClassList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1beta1.ServiceInstanceList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message, object *v1beta1.ServicePlanList does not implement the protobuf marshalling interface and cannot be encoded to a protobuf message",
+                "reason": "ContentDeletionFailed",
+                "status": "True",
+                "type": "NamespaceDeletionContentFailure"
+            },
+            {
+                "lastTransitionTime": "2023-08-10T22:54:42Z",
+                "message": "All content successfully removed",
+                "reason": "ContentRemoved",
+                "status": "False",
+                "type": "NamespaceContentRemaining"
+            },
+            {
+                "lastTransitionTime": "2023-08-10T22:54:42Z",
+                "message": "All content-preserving finalizers finished",
+                "reason": "ContentHasNoFinalizers",
+                "status": "False",
+                "type": "NamespaceFinalizersRemaining"
+            }
+        ],
+        "phase": "Terminating"
+    }
+}
